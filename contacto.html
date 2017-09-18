@@ -24,28 +24,63 @@
     <!-- Pagina web Semantica y Responsive -->
 
     <header> <!-- aca se abre el header de la pagina -->
-      <nav class="navbar"> <!-- menu de navegacion del sitio -->
+<!--       <nav class="navbar"> 
         <div class="container-fluid">
-          <ul class="nav nav-pills col-xs-12 col-sm-9"> <!-- lista con enlaces de la pagina -->
+          <ul class="nav nav-pills col-xs-12 col-sm-9"> 
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="quienes.html">¿Quiénes Somos?</a></li>
             <li class="nav-item"><a class="nav-link" href="noticias.html">Eventos</a></li>
             <li class="nav-item"><a class="nav-link" href="imagenes.html">Imágenes</a></li>
             <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
-          </ul> <!-- fin lista con enlaces de la pagina -->
-          <ul class="nav nav-pills navbar-right col-xs-12 col-sm-3"> <!-- lista con enlaces redes -->
+          </ul> 
+          <ul class="nav nav-pills navbar-right col-xs-12 col-sm-3"> 
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-          </ul><!-- fin lista con enlaces redes -->
+          </ul>
           <div class="container-fluid">
             <div class="row">
               <img src="img/ubicacion.png">
             </div>
           </div>
         </div>
-      </nav><!-- fin menu de navegacion -->
+      </nav> -->
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CGD</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="quienes.html">¿Quienes Somos?</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="imagenes.html">Imagenes</a></li>
+              <li class="active"><a href="#">Contacto <span class="sr-only">(current)</span></a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="redes">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       
+      <div class="container-fluid" id="datos-header">
+        <div class="row">
+          <img src="img/ubicacion.png">
+        </div>
+      </div>
     </header>
     <main>
     
@@ -78,29 +113,37 @@
               <form action="#" method="get">
                 <fieldset>
                   <legend><h4>Escribenos un correo</h4></legend>
-                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2">
-                    <label for="nombre" class="">Nombre Completo</label>
-                    <input type="text" placeholder="Pedrito de los Palotes" class="form-control" name="nombre" maxlength="100" minlength="30" required>  
+                  <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
+                    <label for="nombre" class="col-lg-4 control-label">Nombre Completo</label>
+                    <div class="col-lg-7">
+                      <input type="text" placeholder="Pedrito de los Palotes" class="form-control" name="nombre" maxlength="100" minlength="30" required>  
+                    </div>
                   </div>
-                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2">
-                    <label for="email" class="">Correo Electronico</label>
-                    <input type="email" placeholder="ejemplo@ejemplo.com" class="form-control" name="email" maxlength="100" required>  
+                  <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
+                    <label for="email" class="col-lg-4 control-label">Correo Electronico</label>
+                    <div class="col-lg-7">
+                      <input type="email" placeholder="ejemplo@ejemplo.com" class="form-control" name="email" maxlength="100" required>  
+                    </div>
                   </div>
-                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2">
-                    <label for="seleccion" class="">¿Donde escuchaste de nosotros?</label>
-                    <select class="form-control" name="seleccion" required>
-                      <option value="1">Google</option>
-                      <option value="2">Radio</option>
-                      <option value="3">Televisión</option>
-                      <option value="4">Otro</option>
-                    </select>
+                  <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
+                    <label for="seleccion" class="col-lg-4 control-label">¿Donde escuchaste de nosotros?</label>
+                    <div class="col-lg-7">
+                      <select class="form-control" name="seleccion" required>
+                        <option value="1">Google</option>
+                        <option value="2">Radio</option>
+                        <option value="3">Televisión</option>
+                        <option value="4">Otro</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2">
-                    <label for="mensaje" class="">¿Que quieres decirnos?</label>
-                    <textarea class="form-control" placeholder="Algo..." rows="5" name="mensaje" maxlength="500" minlength="20" required></textarea>  
+                  <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
+                    <label for="mensaje" class="col-lg-4 control-label">¿Que quieres decirnos?</label>
+                    <div class="col-lg-7">
+                      <textarea class="form-control" placeholder="Algo..." rows="5" name="mensaje" maxlength="500" minlength="20" required></textarea>  
+                    </div>
                   </div>
                   
-                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2">
+                  <div class="form-group col-xs-12 col-md-8 col-md-offset-2 text-center" id="botones">
                     <button type="submit" class="btn btn-success">Enviar <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
                     <button type="reset" class="btn btn-danger">Borrar <span class="glyphicon glyphicon-refresh"></span></button>  
                   </div>
@@ -119,8 +162,10 @@
 
     <footer><!-- pie de pagina  -->
       <div class="container-fluid">
-        <div class="row col-xs-12">
-          <p class="copyright text-center">&copy Derechos y zurdos reservados. 2017</p>
+        <div class="row" >
+          <div class="col-xs-12" id="pie-pagina">
+            <p class="text-center" >&copy Derechos y zurdos reservados. 2017</p>
+          </div>
         </div>
       </div>
     </footer>

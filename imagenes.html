@@ -24,7 +24,7 @@
     <!-- Pagina web Semantica y Responsive -->
 
     <header> <!-- aca se abre el header de la pagina -->
-      <nav class="navbar">
+<!--       <nav class="navbar">
         <div class="container-fluid">
           <ul class="nav nav-pills col-xs-12 col-sm-9">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -38,6 +38,36 @@
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
           </ul>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CGD</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Inicio </a></li>
+              <li><a href="quienes.html">¿Quienes Somos?</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li class="active"><a href="#">Imagenes <span class="sr-only">(current)</span></a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="redes">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -53,7 +83,7 @@
     
       <section class="container-fluid">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 galeria">
               <h3>Algunos Proyectos y Eventos</h3>
 
               <div class="responsive"><!-- clase responsive css para galeria -->
@@ -98,14 +128,15 @@
 
     </main>
 
-    <footer> <!-- pie de pagina  -->
+    <footer><!-- pie de pagina  -->
       <div class="container-fluid">
-        <div class="row col-xs-12">
-          <p class="text-center">&copy Derechos y zurdos reservados. 2017</p>
+        <div class="row" >
+          <div class="col-xs-12" id="pie-pagina">
+            <p class="text-center" >&copy Derechos y zurdos reservados. 2017</p>
+          </div>
         </div>
       </div>
     </footer>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>

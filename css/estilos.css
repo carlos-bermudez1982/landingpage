@@ -3,13 +3,21 @@
 	height: auto;
 }
 
-.fa {
-	padding-bottom: 20px;
+#redes .fa, a {
+	padding-bottom: 0;
+	padding-top: 0;
 }
 
+nav a {
+	padding-bottom: 0;
+}
+
+#datos-header {
+	margin-top: 4%;
+	margin-bottom: 1%;
+
+}
 main {
-	margin: 5% 0;
-	/*margin-bottom: 5%;*/
 	padding-bottom: 5%;
 }
 
@@ -43,11 +51,16 @@ article {
 	border-radius: 100%;
 }
 
+.galeria {
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 6%;
+}
 
 .gallery img {
 	width: 100%;
 	height: auto;
-	max-height: 200px;
+	max-height: 215px;
 	border-radius: 5%;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
@@ -67,12 +80,14 @@ article {
 section .responsive {
 	padding: 0 6px;
 	float: left;
-	width: 24.999999%;
+	width: 33.333333%;
 	margin-bottom: 10px;
+	/*margin-right: 10%;*/
+	/*margin-left: 10%;*/
 }
 
 #form-container, #address-container {
-	/*background-color: lightgray !important;*/
+	background-color: lightgray !important;
 	display: block;
 	border: 1px solid black;
 	min-height: 500px;
@@ -83,13 +98,28 @@ section .responsive {
 #myself img {
 	width: 200px;
 	height: auto;
-	/*display: block;*/
 	border-radius: 2%;
 	margin-bottom: 5%;
 }
 
 legend {
 	padding: 2px 10px;
+}
+
+#botones {
+	margin-top: 20px;
+}
+
+/*footer {
+	display: block;
+	width: 100%;
+}*/
+
+#pie-pagina {
+	background-color: lightgray;
+	padding: 10px;
+	width: 100%;
+	margin:0;
 }
 
 @media only screen and (max-width: 700px) {

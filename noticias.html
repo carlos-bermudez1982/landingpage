@@ -24,7 +24,7 @@
     <!-- Pagina web Semantica y Responsive -->
 
     <header> <!-- aca se abre el header de la pagina -->
-      <nav class="navbar">
+<!--       <nav class="navbar">
         <div class="container-fluid">
           <ul class="nav nav-pills col-xs-12 col-sm-9">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -44,14 +44,42 @@
             </div>
           </div>
        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CGD</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="quienes.html">¿Quienes Somos?</a></li>
+              <li class="active"><a href="#">Noticias <span class="sr-only">(current)</span></a></li>
+              <li><a href="imagenes.html">Imagenes</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="redes">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
-<!--       <div class="container-fluid">
-        <div class="text-center col-xs-8 col-xs-offset-2">
-          <h1>Las mejores noticias sobre desarrollo de video juegos</h1>
-          <p>Jugando un juego a la vez</p>
-        </div>
-      </div> -->
+      <div class="container-fluid" id="datos-header">
+        
+      </div>
+
 
     </header>
     
@@ -108,10 +136,12 @@
     <br>
     <br>
 
-    <footer>
+    <footer><!-- pie de pagina  -->
       <div class="container-fluid">
-        <div class="row col-xs-12">
-          <p class="copyright text-center">&copy Derechos y zurdos reservados. 2017</p>
+        <div class="row" >
+          <div class="col-xs-12" id="pie-pagina">
+            <p class="text-center" >&copy Derechos y zurdos reservados. 2017</p>
+          </div>
         </div>
       </div>
     </footer>
